@@ -12,11 +12,6 @@ class Calculation():
         parser = {char1: [], symbol: [], char2: []}
 
         for char in expression:
-            if char == '-':
-                expression.replace('-', '(-')
-            pass
-
-        for char in expression:
             if expression[0] == '-':
                 continue
             if not char.isdigit():
@@ -70,5 +65,7 @@ class Calculation():
                 total = op.product(a, b)
             elif parser[symbol][0] == '/':
                 total = op.quotient(a, b)
+            print("--------")
             print(total)
+
     pass
