@@ -1,16 +1,20 @@
-class Operations():
+class Operations:
     def __init__(self, a, b):
         self.a = a
         self.b = b
 
-    def addition(self, a, b):
+    @staticmethod
+    def addition(a, b):
         return a + b
 
-    def difference(self, a, b):
+    @staticmethod
+    def difference(a, b):
         return a - b
 
-    def product(self, a, b):
+    @staticmethod
+    def product(a, b):
         return a * b
 
-    def quotient(self, a, b):
+    @staticmethod
+    def quotient(a, b):
         return a / b
